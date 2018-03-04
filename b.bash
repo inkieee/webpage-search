@@ -37,3 +37,7 @@ SITES=( 'https://www.bing.com/search?q=fish=Submit'
 eval $CHROME_PATH --new-window ${SITES[@]}
 
 
+#pkill chrome
+OPERA_PATH="opera %U"
+eval $OPERA_PATH --new-window ${SITES[@]}
+
