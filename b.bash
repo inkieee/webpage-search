@@ -1,6 +1,5 @@
 #!/bin/bash
 
-CHROME_PATH="/usr/bin/google-chrome-stable %U"
 SITES=( 'https://www.bing.com/search?q=fish=Submit'
 	'https://www.bing.com/search?q=engineering+internship=Submit'
 	'https://www.bing.com/search?q=mechanical=Submit'
@@ -34,10 +33,10 @@ SITES=( 'https://www.bing.com/search?q=fish=Submit'
 	'https://www.bing.com/search?q=matlab=Submit'
 	'https://www.bing.com/search?q=autodesk=Submit')
 
+CHROME_PATH="/usr/bin/google-chrome-stable %U"
 eval $CHROME_PATH --new-window ${SITES[@]}
-
-
 #pkill chrome
+
 OPERA_PATH="opera %U"
 eval $OPERA_PATH --new-window ${SITES[@]}
-
+pkill opera
